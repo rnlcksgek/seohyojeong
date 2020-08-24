@@ -5,18 +5,22 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home.html')
 
-def course(request):
+def view(request):
+    name = request.GET[''] # 지역 값
+    list1= request.GET[''] # 셀렉트 이름
+    list2 = request.GET[''] # 셀렉트 이름
+    
+
+    return render(request,'view.html')
+
+# def mycourse(request):
 
 
 
-    return render(request,'course.html')
 
-def mycourse(request):
-
+# def course (request):
 
 
-
-def course()
 
 
 
