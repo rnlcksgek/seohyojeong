@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db.models import Q
 
 # Create your views here.
 
@@ -9,7 +10,7 @@ def view(request):
     name = request.GET[''] # 지역 값
     list1= request.GET[''] # 셀렉트 이름
     list2 = request.GET[''] # 셀렉트 이름
-    
+
 
     return render(request,'view.html')
 
