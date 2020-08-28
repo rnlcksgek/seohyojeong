@@ -20,12 +20,7 @@ import course.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('', course.views.index, name = 'index'),
-    path('account/',include('account.urls')),
-=======
     path('', course.views.home, name = 'home'),
->>>>>>> master
     path('course/',include('course.urls')),
     path('users/',include('users.urls'))
 
